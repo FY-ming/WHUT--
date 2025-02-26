@@ -1,0 +1,1298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SystemWindow</class>
+ <widget class="QMainWindow" name="SystemWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>WHUT国仪执勤管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>whut!.ico</normaloff>whut!.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_22">
+    <item>
+     <widget class="QTabWidget" name="worksheet_tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="task">
+       <attribute name="title">
+        <string>值周管理</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QWidget" name="task_widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="0" column="0">
+            <widget class="QSplitter" name="task_all_splitter">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <widget class="QToolBox" name="task_toolBox">
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>1</number>
+              </property>
+              <widget class="QWidget" name="form">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>83</width>
+                 <height>110</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>表格管理</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="QGroupBox" name="task_form_groupBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>60</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string/>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_3">
+                   <item>
+                    <widget class="QPushButton" name="tabulateButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>排班</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="clearButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>清空表格</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="alterButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>重置队员总执勤数</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QPushButton" name="deriveButton">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>导出表格</string>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="rule">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>215</width>
+                 <height>462</height>
+                </rect>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>76</width>
+                 <height>10</height>
+                </size>
+               </property>
+               <attribute name="label">
+                <string>值周排表规则</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QGroupBox" name="task_rule_groupBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>80</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="title">
+                   <string/>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_4">
+                   <item>
+                    <widget class="QCheckBox" name="times_rule">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>总次数分配</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="handover_rule_groupBox">
+                     <property name="title">
+                      <string>南鉴湖国旗交接原则</string>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_32">
+                      <item>
+                       <widget class="QRadioButton" name="No_handover_rule_radioButton">
+                        <property name="text">
+                         <string>不采取交接原则</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QRadioButton" name="Monday_handover_rule_radioButton">
+                        <property name="text">
+                         <string>仅周一设置交接</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QRadioButton" name="All_handover_rule_radioButton">
+                        <property name="text">
+                         <string>全周设置交接</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+             <widget class="QSplitter" name="task_worksheet_splitter">
+              <property name="orientation">
+               <enum>Qt::Orientation::Vertical</enum>
+              </property>
+              <widget class="QTableWidget" name="worksheet">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>570</width>
+                 <height>185</height>
+                </size>
+               </property>
+               <property name="lineWidth">
+                <number>1</number>
+               </property>
+               <attribute name="horizontalHeaderMinimumSectionSize">
+                <number>20</number>
+               </attribute>
+               <attribute name="horizontalHeaderDefaultSectionSize">
+                <number>90</number>
+               </attribute>
+               <attribute name="verticalHeaderDefaultSectionSize">
+                <number>35</number>
+               </attribute>
+               <row>
+                <property name="text">
+                 <string>南鉴湖升旗</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>东西院升旗</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>南鉴湖降旗</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+               </row>
+               <row>
+                <property name="text">
+                 <string>东西院降旗</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>15</pointsize>
+                 </font>
+                </property>
+               </row>
+               <column>
+                <property name="text">
+                 <string>周一</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>周二</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>周三</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>周四</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>周五</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>20</pointsize>
+                 </font>
+                </property>
+               </column>
+              </widget>
+              <widget class="QTextEdit" name="timesResult">
+               <property name="html">
+                <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="teammates">
+       <attribute name="title">
+        <string>队员管理</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QWidget" name="teammates_widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QSplitter" name="teammates_all_splitter">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <widget class="QToolBox" name="teammates_toolBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>80</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>215</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="group1">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>215</width>
+                 <height>414</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>一组</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_21">
+                <item>
+                 <widget class="QSplitter" name="group1_all_splitter">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <widget class="QSplitter" name="group1_button_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <widget class="QPushButton" name="group1_add_pushButton">
+                    <property name="text">
+                     <string>添加组员</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="group1_delete_pushButton">
+                    <property name="text">
+                     <string>删除组员</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QSplitter" name="group1_team_info_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <widget class="QRadioButton" name="group1_iswork_radioButton">
+                    <property name="text">
+                     <string>一组是否值周</string>
+                    </property>
+                   </widget>
+                   <widget class="QGroupBox" name="group1_info">
+                    <property name="title">
+                     <string>组员信息</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_8">
+                     <item>
+                      <widget class="QScrollArea" name="group1_info_scrollArea">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="group1_info_scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>187</width>
+                          <height>335</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_6">
+                         <item>
+                          <widget class="QListView" name="group1_info_listView"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="group2">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>127</width>
+                 <height>143</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>二组</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_20">
+                <item>
+                 <widget class="QSplitter" name="group2_all_splitter">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <widget class="QSplitter" name="group2_button_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <widget class="QPushButton" name="group2_add_pushButton">
+                    <property name="text">
+                     <string>添加组员</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="group2_delete_pushButton">
+                    <property name="text">
+                     <string>删除组员</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QSplitter" name="group2_team_info_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <widget class="QRadioButton" name="group2_iswork_radioButton">
+                    <property name="text">
+                     <string>二组是否值周</string>
+                    </property>
+                   </widget>
+                   <widget class="QGroupBox" name="group2_info">
+                    <property name="title">
+                     <string>组员信息</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_9">
+                     <item>
+                      <widget class="QScrollArea" name="group2_info_scrollArea">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="group2_info_scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>82</width>
+                          <height>80</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_10">
+                         <item>
+                          <widget class="QListView" name="group2_info_listView"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="group3">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>127</width>
+                 <height>143</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>三组</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="QSplitter" name="group3_all_splitter">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <widget class="QSplitter" name="group3_button_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <widget class="QPushButton" name="group3_add_pushButton">
+                    <property name="text">
+                     <string>添加组员</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="group3_delete_pushButton">
+                    <property name="text">
+                     <string>删除组员</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QSplitter" name="group3_team_info_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <widget class="QRadioButton" name="group3_iswork_radioButton">
+                    <property name="text">
+                     <string>三组是否值周</string>
+                    </property>
+                   </widget>
+                   <widget class="QGroupBox" name="group3_info">
+                    <property name="title">
+                     <string>组员信息</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_11">
+                     <item>
+                      <widget class="QScrollArea" name="group3_info_scrollArea">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="group3_info_scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>82</width>
+                          <height>80</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_12">
+                         <item>
+                          <widget class="QListView" name="group3_info_listView"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="group4">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>127</width>
+                 <height>143</height>
+                </rect>
+               </property>
+               <attribute name="label">
+                <string>四组</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <item>
+                 <widget class="QSplitter" name="group4_all_splitter">
+                  <property name="orientation">
+                   <enum>Qt::Orientation::Vertical</enum>
+                  </property>
+                  <widget class="QSplitter" name="group4_button_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Horizontal</enum>
+                   </property>
+                   <widget class="QPushButton" name="group4_add_pushButton">
+                    <property name="text">
+                     <string>添加组员</string>
+                    </property>
+                   </widget>
+                   <widget class="QPushButton" name="group4_delete_pushButton">
+                    <property name="text">
+                     <string>删除组员</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QSplitter" name="group4_team_info_splitter">
+                   <property name="orientation">
+                    <enum>Qt::Orientation::Vertical</enum>
+                   </property>
+                   <widget class="QRadioButton" name="group4_iswork_radioButton">
+                    <property name="text">
+                     <string>四组是否值周</string>
+                    </property>
+                   </widget>
+                   <widget class="QGroupBox" name="group4_info">
+                    <property name="title">
+                     <string>组员信息</string>
+                    </property>
+                    <layout class="QVBoxLayout" name="verticalLayout_13">
+                     <item>
+                      <widget class="QScrollArea" name="group4_info_scrollArea">
+                       <property name="widgetResizable">
+                        <bool>true</bool>
+                       </property>
+                       <widget class="QWidget" name="group4_info_scrollAreaWidgetContents">
+                        <property name="geometry">
+                         <rect>
+                          <x>0</x>
+                          <y>0</y>
+                          <width>82</width>
+                          <height>80</height>
+                         </rect>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_14">
+                         <item>
+                          <widget class="QListView" name="group4_info_listView"/>
+                         </item>
+                        </layout>
+                       </widget>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+             <widget class="QWidget" name="teammate_info_widget" native="true">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <widget class="QScrollArea" name="teammate_info_scrollArea">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="teammate_info_scrollAreaWidgetContents">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>576</width>
+                    <height>496</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_16">
+                   <item>
+                    <widget class="QGroupBox" name="teammate_info_groupBox">
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>0</height>
+                      </size>
+                     </property>
+                     <property name="title">
+                      <string>队员信息</string>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_4">
+                      <item row="0" column="0">
+                       <widget class="QLabel" name="name_label">
+                        <property name="text">
+                         <string>姓名</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="8">
+                       <widget class="QLineEdit" name="birthday_lineEdit"/>
+                      </item>
+                      <item row="3" column="6">
+                       <widget class="QLabel" name="dorm_label">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="text">
+                         <string>宿舍</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="6">
+                       <widget class="QLabel" name="birthday_label">
+                        <property name="text">
+                         <string>生日</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="8">
+                       <widget class="QLineEdit" name="nativePlace_lineEdit"/>
+                      </item>
+                      <item row="0" column="6">
+                       <widget class="QLabel" name="gender_label">
+                        <property name="text">
+                         <string>性别</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="1">
+                       <widget class="QLineEdit" name="name_lineEdit"/>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QLabel" name="phone_label">
+                        <property name="text">
+                         <string>联系电话</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="9">
+                       <widget class="QLabel" name="native_label">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="text">
+                         <string>民族</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QLabel" name="school_label">
+                        <property name="text">
+                         <string>学院</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="0">
+                       <widget class="QLabel" name="class_label">
+                        <property name="text">
+                         <string>班级</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QLineEdit" name="phone_lineEdit"/>
+                      </item>
+                      <item row="0" column="8">
+                       <widget class="QComboBox" name="gender_combobox">
+                        <item>
+                         <property name="text">
+                          <string>男</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>女</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                      <item row="3" column="1">
+                       <widget class="QLineEdit" name="class_lineEdit"/>
+                      </item>
+                      <item row="2" column="6">
+                       <widget class="QLabel" name="nativePlace_label">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <property name="text">
+                         <string>籍贯</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="3" column="8">
+                       <widget class="QLineEdit" name="dorm_lineEdit"/>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QLineEdit" name="school_lineEdit"/>
+                      </item>
+                      <item row="1" column="10">
+                       <widget class="QLineEdit" name="native_lineEdit"/>
+                      </item>
+                      <item row="0" column="9">
+                       <widget class="QLabel" name="group_label">
+                        <property name="text">
+                         <string>所属组别</string>
+                        </property>
+                       </widget>
+                      </item>
+                      <item row="0" column="10">
+                       <widget class="QComboBox" name="group_combobox">
+                        <item>
+                         <property name="text">
+                          <string>一组</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>二组</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>三组</string>
+                         </property>
+                        </item>
+                        <item>
+                         <property name="text">
+                          <string>四组</string>
+                         </property>
+                        </item>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QGroupBox" name="availableTime_groupBox">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>480</width>
+                       <height>230</height>
+                      </size>
+                     </property>
+                     <property name="title">
+                      <string>出勤安排</string>
+                     </property>
+                     <layout class="QGridLayout" name="gridLayout_5">
+                      <item row="1" column="3">
+                       <widget class="QGroupBox" name="thursday_up_groupBox">
+                        <property name="title">
+                         <string>周四升旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_26">
+                         <item>
+                          <widget class="QPushButton" name="thursday_up_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="thursday_up_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="thursday_up_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="2">
+                       <widget class="QGroupBox" name="wednesday_down_groupBox">
+                        <property name="title">
+                         <string>周三降旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_29">
+                         <item>
+                          <widget class="QPushButton" name="wednesday_down_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="wednesday_down_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="wednesday_down_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="2">
+                       <widget class="QGroupBox" name="wednesday_up_groupBox">
+                        <property name="title">
+                         <string>周三升旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_23">
+                         <item>
+                          <widget class="QPushButton" name="wednesday_up_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="wednesday_up_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="wednesday_up_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="1">
+                       <widget class="QGroupBox" name="tuesday_up_groupBox">
+                        <property name="title">
+                         <string>周二升旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_31">
+                         <item>
+                          <widget class="QPushButton" name="tuesday_up_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="tuesday_up_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="tuesday_up_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="4">
+                       <widget class="QGroupBox" name="friday_up_groupBox">
+                        <property name="title">
+                         <string>周五升旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_24">
+                         <item>
+                          <widget class="QPushButton" name="friday_up_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="friday_up_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="friday_up_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="4">
+                       <widget class="QGroupBox" name="friday_down_groupBox">
+                        <property name="title">
+                         <string>周五降旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_25">
+                         <item>
+                          <widget class="QPushButton" name="friday_down_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="friday_down_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="friday_down_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="0">
+                       <widget class="QGroupBox" name="monday_down_groupBox">
+                        <property name="title">
+                         <string>周一降旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_27">
+                         <item>
+                          <widget class="QPushButton" name="monday_down_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="monday_down_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="monday_down_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="1" column="0">
+                       <widget class="QGroupBox" name="monday_up_groupBox">
+                        <property name="title">
+                         <string>周一升旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_17">
+                         <item>
+                          <widget class="QPushButton" name="monday_up_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="monday_up_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="monday_up_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院升旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="1">
+                       <widget class="QGroupBox" name="tuesday_down_groupBox">
+                        <property name="title">
+                         <string>周二降旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_28">
+                         <item>
+                          <widget class="QPushButton" name="tuesday_down_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="tuesday_down_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="tuesday_down_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="2" column="3">
+                       <widget class="QGroupBox" name="thursday_down_groupBox">
+                        <property name="title">
+                         <string>周四降旗</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_30">
+                         <item>
+                          <widget class="QPushButton" name="thursday_down_all_pushButton">
+                           <property name="text">
+                            <string>全选</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="thursday_down_NJH_pushButton">
+                           <property name="text">
+                            <string>南鉴湖降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QPushButton" name="thursday_down_DXY_pushButton">
+                           <property name="text">
+                            <string>东西院降旗</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item row="0" column="0">
+                       <widget class="QPushButton" name="isWork_pushButton">
+                        <property name="text">
+                         <string>全选/清空</string>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="instruction">
+       <attribute name="title">
+        <string>使用说明</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QScrollArea" name="instruction_scrollArea">
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="instruction_scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>818</width>
+             <height>520</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QTextEdit" name="instructionText">
+              <property name="html">
+               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;WHUT国旗班执勤管理系统使用说明&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;注意：如果要增减队员或修改队员信息请务必使用管理员权限打开程序！&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;如果了解，也可通过属性菜单修改程序的用户访问权限。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;大致方法为：找到应用程序（.exe文件），右键程序，选择“属性”按键，选择“安全”选项，将User的访问权限设为完全访问。&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;系统总体介绍&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       该系统从设计之初便是为了简化排班流程，减少不必要的工作量。可用于管理队员部分信息，制作并导出执勤工作表。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       系统一共有两个模块：值周管理、队员管理。下面进行介绍：&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;值周管理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;       &lt;/span&gt;值周管理是执行制表和导出工作的模块，在使用前请先前往队员管理界面完成队员信息填写以及执勤组的选择。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       排班按钮就是制表操作，制表结束将会在右下文本框中展示制表信息，队员本周执勤次数、总次数，如果有时间没有安排人选也会发送警告信息。导出表格会导出一个excel表格文件，可能需要一些时间，记住保存的文件地址就行，可以修改文件名。总次数规则这个东西可用可不用，就是根据所有队员的总执勤次数排表，让所有人的总执勤次数基本一致。交接规则主要是针对周一南鉴湖降旗后晚上没有国旗班工作事务，不方便交接给明天的升旗队员，所以会安排至少一名南鉴湖降旗队员到明天的南鉴湖升旗任务。所以交接规则也可要可不要。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;队员管理&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;       &lt;/span&gt;队员管理负责管理、修改队员信息，包括基础信息以及执勤时间安排信息。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       左侧是组别选择工具栏，请选择对应的组别加入其组员。添加组员按钮用于添加一名新队员标签，删除组员按钮将会删除选定的组员。是否执勤按钮代表该组是否加入到排表中，如果不选定，整组队员将不会参与到排表。如果组内存在个别队员无法参与执勤，选定整组执勤按钮后将个别组员的时间安排全部取消即可。点击左侧队员标签，右侧将展示对应队员的信息，请在右侧输入信息进行修改，不要修改左侧队员标签的文本，因为不会保存。另外，请注意当修改了右侧队员的组别信息时，队员的标签将转移到修改后的组中，不要疑惑。时间安排信息看对应按钮的名字就行，选定代表该时间地点队员可以执勤，否则请取消勾选。全选按钮只是为了方便操作，不用也行。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;作者的废话&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       作者能力有限还喜欢唠嗑，人话就是废话多，所以很高兴你能看完那么多的使用说明并尝试使用这个系统，也不知道我的使用说明讲明白了没有。如果没讲明白那真是非常抱歉，作者语文不怎么好，还请海涵。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       尽可能想将重复的执勤排班工作简单高效地完成，我以自己微不足道的专业知识完成了这个小工程。因为没有相关的工作经验，出现问题是必然的。我所能做的也只是尽力让问题减小，让你尽可能不被系统设计错误困扰。作者能力有限，使用过程中出现了任何异常情况或者程序崩溃，请联系作者，我也将尽力让这个小家伙愈加完善。如果联系不上那算了，这个小家伙做起来还怪累的，我也不想再折腾它了:(     &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       本来最初想在这个程序里设置点彩蛋，想了想，还是算了，毕竟也不一定会真正用这个东西排表，而且要是真用了，自己留个彩蛋还怪不好意思的。就这样，感谢使用！万明留。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
